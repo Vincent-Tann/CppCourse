@@ -35,7 +35,7 @@ public:
         if(len>0){
             number=data[0];
             for(int i=0;i<len;i++){
-                data[i]=data[i+1];
+                data[i]=data[i+1]; //依次前移
             }
             len-=1;
         }
@@ -70,7 +70,7 @@ public:
         return len;
     }
 
-
+    //打印整个队列
     void print_data(){
         for(int i=0; i<len; i++){
             cout << data[i] << " ";
